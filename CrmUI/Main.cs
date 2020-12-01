@@ -46,5 +46,7 @@ namespace CrmUI
                 db.SaveChanges();
             }
         }
+
+        public void TestwithBranch() { }
     }
 }
