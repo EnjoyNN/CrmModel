@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmBuisnessLogic", "CrmBuisnessLogic\CrmBuisnessLogic.csproj", "{2F7F7670-7FC6-42D9-81BA-3FD27A27C11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmUI", "CrmUI\CrmUI.csproj", "{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F7F7670-7FC6-42D9-81BA-3FD27A27C11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7F7670-7FC6-42D9-81BA-3FD27A27C11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7F7670-7FC6-42D9-81BA-3FD27A27C11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7F7670-7FC6-42D9-81BA-3FD27A27C11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E68B4260-BEDE-4D6E-8FF8-72687A621524}
+	EndGlobalSection
+EndGlobal
