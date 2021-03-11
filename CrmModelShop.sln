@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmBuisnessLogic", "CrmBuis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmUI", "CrmUI\CrmUI.csproj", "{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrmBuisnessLogicTests", "CrmBuisnessLogicTests\CrmBuisnessLogicTests.csproj", "{70B401C6-373C-4E19-B40E-08F04CBF0248}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ECB6693-FC87-496B-AC0C-DFD5DA6990DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B401C6-373C-4E19-B40E-08F04CBF0248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B401C6-373C-4E19-B40E-08F04CBF0248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B401C6-373C-4E19-B40E-08F04CBF0248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B401C6-373C-4E19-B40E-08F04CBF0248}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
