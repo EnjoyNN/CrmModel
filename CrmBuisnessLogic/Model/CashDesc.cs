@@ -24,6 +24,7 @@ namespace CrmBuisnessLogic.Model
         /// Свойство чтобы понимать нужно ли сохранять в базу данных, либо это беовая работа
         /// </summary>
         public bool isModel { get; set; }
+        public int count => Queue.Count;
 
         public CashDesc(int number, Seller seller)
         {
@@ -49,7 +50,8 @@ namespace CrmBuisnessLogic.Model
         public decimal Dequeue()
         {
             decimal sum = 0;
-
+            if (Queue.Count == 0)
+                return 0;
             var card = Queue.Dequeue();
 
             if (card != null)
