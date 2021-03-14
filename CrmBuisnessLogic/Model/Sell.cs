@@ -14,7 +14,7 @@ namespace CrmBuisnessLogic.Model
 
         public int ProductId { get; set; }
 
-        public virtual Check Chech { get; set; }
+        public virtual Check Check { get; set; }
 
         public virtual Product Product { get; set; }
     }
