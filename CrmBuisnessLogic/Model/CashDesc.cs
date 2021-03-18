@@ -26,6 +26,8 @@ namespace CrmBuisnessLogic.Model
         public bool isModel { get; set; }
         public int count => Queue.Count;
 
+        public event EventHandler<Check> checkClosed;
+
         public CashDesc(int number, Seller seller)
         {
             numberDesc = number;
@@ -103,10 +105,14 @@ namespace CrmBuisnessLogic.Model
                         sum += product.Price;
                     }
                 }
+                check.price = sum;
+
                 if (!isModel)
                 {
                     db.SaveChanges();
                 }
+
+                checkClosed?.Invoke(this, check);
             }
 
             return sum;
