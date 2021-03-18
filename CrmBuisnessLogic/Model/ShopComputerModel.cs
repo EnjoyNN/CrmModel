@@ -17,6 +17,8 @@ namespace CrmBuisnessLogic.Model
         public List<Check> checks { get; set; } = new List<Check>();
         public List<Sell> sells { get; set; } = new List<Sell>();
         public Queue<Seller> sellers { get; set; } = new Queue<Seller>();
+        public int customerSpeed { get; set; } = 100;
+        public int cashDescSpeed { get; set; } = 100;
 
         public ShopComputerModel()
         {
@@ -51,9 +53,9 @@ namespace CrmBuisnessLogic.Model
         public void Start()
         {
             isWorking = true;
-            Task.Run(() => createCarts(10, 1000));
+            Task.Run(() => createCarts(10, customerSpeed));
 
-            var cashDescTasks = cashDescs.Select(c => new Task(() => CashDeskWork(c, 1000)));
+            var cashDescTasks = cashDescs.Select(c => new Task(() => CashDeskWork(c, cashDescSpeed)));
             foreach(var task in cashDescTasks)
             {
                 task.Start();
@@ -70,7 +72,6 @@ namespace CrmBuisnessLogic.Model
             while (isWorking)
             {
                 var customers = generator.getNewCustomers(customerCounts);
-                var carts = new Queue<Cart>();
 
                 foreach (var customer in customers)
                 {

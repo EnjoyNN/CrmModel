@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CrmBuisnessLogic.Model
 {
@@ -34,6 +31,7 @@ namespace CrmBuisnessLogic.Model
             Seller = seller;
             Queue = new Queue<Cart>();
             isModel = true;
+            maxQueueLength = 10;
         }
 
         //добавление человека в очередь
@@ -76,7 +74,7 @@ namespace CrmBuisnessLogic.Model
                 }
                 else
                 {
-                    check.CheckId = 1;
+                    check.CheckId = 0;
                 }
 
                 var sells = new List<Sell>();
@@ -116,6 +114,11 @@ namespace CrmBuisnessLogic.Model
             }
 
             return sum;
+        }
+
+        public override string ToString()
+        {
+            return $"Касса №{numberDesc}";
         }
     }
 }
